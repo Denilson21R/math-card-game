@@ -13,6 +13,7 @@ class RulesController extends AbstractController
     {
         return $this->render('rules/index.html.twig', [
             'controller_name' => 'RulesController',
+            'page' => 'rules',
         ]);
     }
 }

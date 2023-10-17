@@ -1,0 +1,76 @@
+{% extends 'app_base.html.twig' %}
+
+{% block title %}Rules{% endblock %}
+
+{% block body %}
+    <div>
+        <div class="mt-5 mx-24 upper-players">
+            <div class="player mx-24">
+                <figure class="bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                    <div class="pt-6 md:p-8 text-center space-y-4">
+                        <p class="text-lg text-center text-white font-medium">
+                            {{ enemy1 }}
+                        </p>
+                        <p class="text-lg text-center text-white">
+                            {{ enemy1.score }} pontos
+                        </p>
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <div class="columns-2 gap-24 mt-24 mx-10 middle-players">
+            <figure class="bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 player">
+                <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                    <p class="text-lg text-center text-white font-medium">
+                        {{ enemy2 }}
+                    </p>
+                    <p class="text-lg text-center text-white">
+                        {{ enemy2.score }} pontos
+                    </p>
+                </div>
+            </figure>
+            <figure class="bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 player">
+                <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                    <p class="text-lg text-center text-white font-medium">
+                        {{ enemy3 }}
+                    </p>
+                    <p class="text-lg text-center text-white">
+                        {{ enemy2.score }} pontos
+                    </p>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <div class="botton-players">
+        <div class="mt-10 mx-24 player">
+            <div class="mt-10">
+                Sua pontuação: {{ player.score }}
+            </div>
+            <div class="cards columns-3 mt-5 gap-10 mx-24">
+                <figure class="bg-slate-300 rounded-xl p-8 md:p-0 dark:bg-amber-300">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg text-center font-medium">
+                            carta 1
+                        </p>
+                    </div>
+                </figure>
+                <figure class="bg-slate-300 rounded-xl p-8 md:p-0 dark:bg-amber-300">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg text-center font-medium">
+                            carta 2
+                        </p>
+                    </div>
+                </figure>
+                <figure class="bg-slate-300 rounded-xl p-8 md:p-0 dark:bg-amber-300">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <p class="text-lg text-center font-medium">
+                            carta 3
+                        </p>
+                    </div>
+                </figure>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
